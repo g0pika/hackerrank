@@ -14,7 +14,6 @@ import sys
 #
 
 def findMedian(arr):
-    # Write your code here
     median = 0
     arr.sort()
     if n % 2 == 0:
