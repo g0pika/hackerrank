@@ -8,11 +8,9 @@ class Person:
 		print("ID:", self.idNumber)
 
 class Student(Person):
-    def __init__(self, firstName, lastName, idNumber, score):
-        self.firstName = firstName
-        self.lastName = lastName
-        self.idNumber = idNumber
-        self.score = scores
+    def __init__(self, firstName, lastName, idNumber, scores):
+        super().__init__(firstName, lastName, idNumber)
+        self.scores = scores
         
         
     def calculate(self):
