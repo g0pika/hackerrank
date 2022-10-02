@@ -9,8 +9,8 @@ import sys
 
 def icecreamParlor(m, arr):
     for i in range(n):
-        for j in range(n):
-            if i != j and arr[i]+arr[j] == m:
+        for j in range(i+1,n):
+            if arr[i]+arr[j] == m:
                 return i+1, j+1
               
 #This code will have a time complexity of O(n^2). 
